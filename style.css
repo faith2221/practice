@@ -161,6 +161,7 @@
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 .submenu .dropdown a {
@@ -174,21 +175,6 @@
 .submenu .dropdown a:hover {
     background-color: #18aeb9;
     color: #fff;
-}
-
-.sidebar .dropdown.show {
-    display: block;
-}
-
-.sidebar ul .submenu .dropdown {
-    display: none;
-    flex-direction: column;
-    background-color: #34495e;
-    padding-left: 20px;
-}
-
-.sidebar ul .submenu .dropdown.show {
-    display: flex;
 }
 
 .sidebar ul .submenu .arrow {
