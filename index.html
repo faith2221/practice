@@ -115,6 +115,7 @@
     // Dropdown toggle functionality
     let submenus = document.querySelectorAll(".submenu");
     submenus.forEach(menu => {
+        let menuLink = menu.querySelector(".menu-link");
         menuLink.onclick = function() {
             let dropdown = menu.querySelector(".dropdown");
             dropdown.classList.toggle("show");
