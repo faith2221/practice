@@ -148,6 +148,37 @@
     display: none;
 }
 
+.submenu .dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: #34495e;
+    padding-left: 20px;
+}
+
+.sidebar .dropdown .show {
+    display: flex;
+}
+
+.sidebar ul .submenu .dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: #34495e;
+    padding-left: 20px;
+}
+
+.sidebar ul .submenu .dropdown. show {
+    display: flex;
+}
+
+.sidebar ul .submenu .arrow {
+    margin-left: auto;
+    transition: all 0.5s ease;
+}
+
+.sidebar ul .submenu .arrow.rotate {
+    transform: rotate(180deg);
+}
+
 .main-content{
     position: relative;
     background-color: #eee;

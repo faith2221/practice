@@ -32,21 +32,35 @@
               </a>
               <span class="tooltip">Dashboard</span>
            </li>
-           <li>
-              <a href="#">
+           <li class="submenu">
+              <a href="javascript:void(0)" class="menu-link">
                 <i class="bx bxs-shopping-bag"></i>
                 <span class="nav-item">Products</span>
+                <i class="bx bx-chevron-down arrow"></i>
               </a>
+              <ul class="dropdown">
+                <li><a href="#">View Products</a></li>
+                <li><a href="#">Add Product</a></li>
+                <li><a href="#">Edit Product</a></li>
+                <li><a href="#">Delete Product</a></li>
+              </ul>
               <span class="tooltip">Products</span>
            </li>
-           <li>
-              <a href="#">
+           <li class="submenu">
+              <a href="javascript:void(0)" class="menu-link">
                 <i class="bx bx-list-check"></i>
                 <span class="nav-item">Categories</span>
+                <i class="bx bx-chevron-down arrow"></i>
               </a>
+              <ul class="dropdown">
+                <li><a href="#">View Categories</a></li>
+                <li><a href="#">Add Category</a></li>
+                <li><a href="#">Edit Category</a></li>
+                <li><a href="#">Delete Category</a></li>
+              </ul>
               <span class="tooltip">Categories</span>
            </li>
-           <li>
+           <li class="">
               <a href="#">
                 <i class="bx bxs-food-menu"></i>
                 <span class="nav-item">Orders</span>
@@ -97,5 +111,16 @@
     btn.onclick = function() {
         sidebar.classList.toggle("active");
     };
+
+    // Dropdown toggle functionality
+    let submenus = document.querySelectorAll(".submenu");
+    submenus.forEach(menu => {
+        menuLink.onclick = function() {
+            let dropdown = menu.querySelector(".dropdown");
+            dropdown.classList.toggle("show");
+            let arrow = menu.querySelector(".arrow");
+            arrow.classList.toggle("rotate"); 
+        };
+    });
 </script>
 </html>
