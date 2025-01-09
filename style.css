@@ -148,48 +148,6 @@
     display: none;
 }
 
-.submenu {
-    position: relative;
-}
-
-.submenu .dropdown {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background-color: #34495e;
-    padding: 0.5rem 1rem;
-    border-radius: 0.4rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.submenu .dropdown a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 0.4rem 0.8rem;
-    border-radius: 0.4rem;
-}
-
-.submenu .dropdown a:hover {
-    background-color: #18aeb9;
-    color: #fff;
-}
-
-.sidebar ul .submenu .arrow {
-    margin-left: auto;
-    transition: all 0.5s ease;
-}
-
-.sidebar ul .submenu .arrow.rotate {
-    transform: rotate(180deg);
-}
-
-.submenu .dropdown.show {
-    display: block;
-}
-
 .main-content{
     position: relative;
     background-color: #eee;
